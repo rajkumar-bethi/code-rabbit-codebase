@@ -1,0 +1,32 @@
+
+# CodeRabbit Configuration File
+
+# Enable or disable features
+features:
+  summary: true              # Generate a summary of the pull request
+  walkthrough: true          # Provide a walkthrough of the changes
+  line_by_line_comments: true  # Enable line-by-line code review comments
+
+# Language preferences
+languages:
+  - python
+  - javascript
+  - typescript
+  - go
+
+# Custom commands that can be triggered in PR comments
+commands:
+  generate-docstrings: true
+  suggest-optimizations: true
+  check-security: true
+
+# Review behavior
+review:
+  on_open: true              # Trigger review when PR is opened
+  on_update: true            # Trigger review when PR is updated
+  on_comment: true           # Trigger review when a comment is made
+
+# Optional: Exclude specific files or directories from review
+exclude:
+  - "docs/"
+  - "*.md"
