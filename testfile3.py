@@ -1053,6 +1053,7 @@ class ContactAndCountryUpdateView(APIView):
             user_id = (int)(request.data['user_id'])
             phone_number = request.data.get('mobile_number')
             country_code = request.data.get('country')
+            loggng.info(country_code)
 
             if not user_id:
                 return Response({"error": "user_id is required"}, status=status.HTTP_400_BAD_REQUEST)
