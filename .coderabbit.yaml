@@ -23,10 +23,6 @@ review:
   on_open: true              # Trigger review when PR is opened
   on_update: true            # Trigger review when PR is updated (new commits)
   on_comment: true           # Trigger review when a comment is made
-  review_status: true        # Enable review status messages
-  incremental_review: false   # Review only new changes in subsequent commits
-  auto_review_branches:      # Specify branches to auto-review (empty or '*' for all)
-    - '*'                    # Review PRs targeting any branch
 
 # Optional: Exclude specific files or directories from review
 exclude:
