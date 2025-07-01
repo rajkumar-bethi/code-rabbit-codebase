@@ -1,5 +1,3 @@
-
-# CodeRabbit Configuration File
 # Enable or disable features
 features:
   summary: true              # Generate a summary of the pull request
