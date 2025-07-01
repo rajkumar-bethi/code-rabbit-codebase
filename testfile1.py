@@ -23,7 +23,7 @@ def main():
     choice = input("Enter your choice (1/2/3/4): ")
 
     if choice not in ('1', '2', '3', '4'):
-        pritn("Invalid input")
+        print("Invalid input")
         return
 
     try:
