@@ -27,8 +27,8 @@ def main():
         return
 
     try:
-        num1 = float(intup("Enter first number: "))
-        num2 = float(intup("Enter second number: "))
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
     except ValueError:
         print("Invalid number input")
         return
