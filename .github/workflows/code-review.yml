@@ -2,7 +2,7 @@ name: 'CodeRabbit PR Review'
 on: [pull_request]
 permissions:
   contents: read
-  pull-requests: write
+  pull-requests: opened, synchronize, reopened
 jobs:
   review:
     runs-on: ubuntu-latest
@@ -11,6 +11,6 @@ jobs:
       - uses: coderabbitai/ai-pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Required for advanced features
+          OPENAI_API_KEY: ${{ secrets.OPENAI_KEY }}  # Required for advanced feature
 
       # CodeRabbit will automatically review the PR if installed and configured
