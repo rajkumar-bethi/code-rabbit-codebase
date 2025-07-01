@@ -2,7 +2,7 @@ name: 'CodeRabbit PR Review'
 on: [pull_request]
 permissions:
   contents: read
-  pull-requests: write
+  pull-requests: opened, synchronize, reopened
 jobs:
   review:
     runs-on: ubuntu-latest
