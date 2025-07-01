@@ -11,6 +11,6 @@ jobs:
       - uses: coderabbitai/ai-pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Required for advanced features
+          OPENAI_API_KEY: ${{ secrets.OPENAI_KEY }}  # Required for advanced features
 
       # CodeRabbit will automatically review the PR if installed and configured
